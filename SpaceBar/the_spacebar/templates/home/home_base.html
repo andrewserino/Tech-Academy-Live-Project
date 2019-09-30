@@ -1,0 +1,162 @@
+  <!-- Header -->
+  <section id="services">
+    <header class="masthead">
+      <div class="container d-flex h-100 align-items-center">
+        <div class="mx-auto text-center">      
+                <h1 class="mx-auto my-0 text-uppercase">The Spacebar</h1>
+                <h2 class="text-white-50 mx-auto mt-2 mb-5">Powered by Django, the Spacebar brings the universe to your backyard.</h2>
+                <a href="expand-collapse" class="btn btn-primary js-scroll-trigger" data-toggle="collapse" data-target="#buttonlist" role="button">Services</a>
+                <br><br><br>
+
+                <div class="collapse" id="buttonlist">
+                  <div class="btn-block">
+                    <a href="{% url 'apis' %}" class="btn btn-primary button-css">APIs</a>
+                    <a href="{% url 'wiki' %}" class="btn btn-primary button-css">Space Wiki</a>
+                    <a href="{% url 'pictures' %}" class="btn btn-primary button-css">Pictures</a>
+                  </div>
+                  <br>
+                  <div class="btn-block">
+                    <a href="{% url 'data-science' %}" class="btn btn-primary button-css">Data Science</a>
+                    <a href="#" class="btn btn-primary button-css">Some Service</a>
+                    <a href="#" class="btn btn-primary button-css">Some Other Service</a>
+                  </div>
+                </div>
+          
+        </div>
+      </div>
+    </header>
+  </section>
+
+  <!-- Spacebar Cafe Section -->
+  <section id="cafe" class="about-section text-center">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 mx-auto">
+          <a href="{% url 'cafe' %}" class="btn btn-primary btn-block">The Original Spacebar Cafe<a>
+          <a href="{% url 'data-science' %}" class="btn btn-primary btn-block">The Original Spacebar Cafe</h2></a>
+          <p class="text-white-50">The Spacebar is your one-stop shop for all things space! We feature NASA APIs, Data visualization, a space wiki, and at our brick-and-mortar location, we even have a full-service restaurant and bar! See our food and drink menu below!</p>
+        </div>
+      </div>
+      <img class="img-thumbnail" src="../static/images/art4.jpg" class="img-fluid" alt="">
+    </div>
+  </section>
+
+  <!-- Restaurant Section -->
+  <section class="projects-section">
+    <div class="container">
+
+      <!-- Food One Row -->
+      <div class="row justify-content-center no-gutters mb-5 mb-lg-0">
+        <div class="col-lg-6">
+          <img class="img-fluid" src="../static/images/pizza.jpg" alt="">
+        </div>
+        <div class="col-lg-6">
+          <div class="bg-black text-center h-100 project">
+            <div class="d-flex h-100">
+              <div class="project-text w-100 my-auto text-center text-lg-left">
+                <h4 class="text-white">Food</h4>
+                <p class="mb-0 text-white-50">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <hr class="d-none d-lg-block mb-0 ml-0">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Drinks Two Row -->
+      <div class="row justify-content-center no-gutters">
+        <div class="col-lg-6">
+          <img class="img-fluid" src="../static/images/drinks.jpg" alt="">
+        </div>
+        <div class="col-lg-6 order-lg-first">
+          <div class="bg-black text-center h-100 project">
+            <div class="d-flex h-100">
+              <div class="project-text w-100 my-auto text-center text-lg-right">
+                <h4 class="text-white">Drinks</h4>
+                <p class="mb-0 text-white-50">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <hr class="d-none d-lg-block mb-0 mr-0">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Signup Section -->
+  <section id="signup" class="signup-section">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-10 col-lg-8 mx-auto text-center">
+
+          <i class="far fa-paper-plane fa-2x mb-2 text-white"></i>
+          <h2 class="text-white mb-5">Subscribe to receive updates!</h2>
+
+          <form class="form-inline d-flex">
+            <input type="email" class="form-control flex-fill mr-0 mr-sm-2 mb-3 mb-sm-0" id="inputEmail" placeholder="Enter email address...">
+            <button type="submit" class="btn btn-primary mx-auto">Subscribe</button>
+          </form>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="contact-section bg-black">
+    <div class="container">
+
+      <div class="row">
+
+        <div class="col-md-4 mb-3 mb-md-0">
+          <div class="card py-4 h-100">
+            <div class="card-body text-center">
+              <i class="fas fa-map-marked-alt text-primary mb-2"></i>
+              <h4 class="text-uppercase m-0">Address</h4>
+              <hr class="my-4">
+              <div class="small text-black-50">310 SW 4th Ave. Portland, OR</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 mb-3 mb-md-0">
+          <div class="card py-4 h-100">
+            <div class="card-body text-center">
+              <i class="fas fa-envelope text-primary mb-2"></i>
+              <h4 class="text-uppercase m-0">Email</h4>
+              <hr class="my-4">
+              <div class="small text-black-50">
+                <a href="#">instructor@learncodinganywhere.com</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 mb-3 mb-md-0">
+          <div class="card py-4 h-100">
+            <div class="card-body text-center">
+              <i class="fas fa-mobile-alt text-primary mb-2"></i>
+              <h4 class="text-uppercase m-0">Phone</h4>
+              <hr class="my-4">
+              <div class="small text-black-50">+1 (503) 206-6915</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="social d-flex justify-content-center">
+        <a href="https://twitter.com/TheTechAcad" class="mx-2">
+          <i class="fab fa-twitter"></i>
+        </a>
+        <a href="https://www.facebook.com/learncodinganywhere/" class="mx-2">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+        <a href="https://github.com/TheTechAcademy" class="mx-2">
+          <i class="fab fa-github"></i>
+        </a>
+      </div>
+
+    </div>
+  </section>
+
